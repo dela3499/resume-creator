@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+  <meta http-equive="Content-Type" content="text/html; charset=utf-8"/>
+  <title>resume-creator</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="css/simple.css" media="screen"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+  <script src="js/jquery.xcolor.js"></script>
+  <script src="js/tinycolor.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.blend.js"></script>
+  <script src="js/editor.js"></script>
+
+
+  
+
+  
+</head>
+
+<body>
+
+    <script>
+      // $(function() {
+      //   $('#blend img').each(function() {
+      //     $(this).blend({mode: $(this).attr('data-blend-mode'), adjustment: $(this).attr('data-blend-adjustment')});
+      //   });
+      // });
+    </script>
+
+	<div id="container" class="clearfix">
+
+		<div id="col1">
+			<div id="c1">
+				<input id="gpa"type="text" name="name" value="3.69" maxlength="4">
+				<div id="gpa_label">GPA&#8593;</div><br>
+				<textarea id="school_info" rows="3" type="text" name="name">Texas A&amp;M University '12 B.S. Mechanical Engineering</textarea>
+				<!-- <div id="email">dela3499&#64;gmail.com</div> -->
+				<input id="email"type="text" name="name" value="dela3499&#64;gmail.com" >
+				<div id="name">Carlos<br>De la Guardia</div>
+				<div id="headshot"><img style="height:auto; width:auto; max-width:2in; max-height:4in;" src="img/headshot.jpg" alt="picture of me"></div>
+			</div>	
+		</div>
+
+		<div id="col2">
+			<div id='col2background'></div>
+			<div id="c2">
+
+				<div id="jobs">
+
+		 			<div class="job">
+						<div class="employer">NASA Robotics</div>
+						<div class="job_tags">9 Month Research Assistantship. Python. C++. Matlab. Controls.</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum erat ac pharetra mollis. Integer vel sapien tristique, interdum ligula quis, euismod nulla. Praesent laoreet urna leo, vitae faucibus nisl aliquam eget. 
+						</p>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="job">
+						<div class="employer">Texas Instruments</div>
+						<div class="job_tags">3 Month Internship. Quality Control. Diffusion Furnaces.</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum erat ac pharetra mollis. Integer vel sapien tristique, interdum ligula quis, euismod nulla. Praesent laoreet urna leo, vitae faucibus nisl aliquam eget. 
+						</p>
+					</div>
+
+					<div class="sep"></div>
+
+					<div class="job">
+						<div class="employer">AFRL Combustion</div>
+						<div class="job_tags">3 Month Internship. Labview. Matlab. Spark Igniters. Testing.</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum erat ac pharetra mollis. Integer vel sapien tristique, interdum ligula quis, euismod nulla. Praesent laoreet urna leo, vitae faucibus nisl aliquam eget. 
+						</p>
+					</div>		
+
+				</div>
+
+				<div class="sep"></div> 			
+	 			
+	 			<div id="skills">
+					<div id="skill_title">Skills</div>
+					<ul id="skill_levels">
+						<li>1000</li>
+						<li>1000</li>
+						<li>50</li>
+						<li>50</li>
+						<li>20</li>
+					</ul>				
+					<ul id="skill_list">
+						<li>Python</li>
+						<li>Matlab</li>
+						<li>SolidWorks</li>
+						<li>C++</li>
+						<li>Autocad</li>
+					</ul>
+
+					<!-- <div id="skill_level_label">Approx. Hrs.</div>  -->
+				</div>
+			</div>	
+		</div>
+<!-- 		<div id="col2a">
+		</div> -->
+
+
+
+		<div id="editor">
+			<div id='menu'><img src="img/options2.png" height="40px"></div>
+			<div id='overlay'></div>
+			<div id='overlay2'>
+				<div>Resumaker</div>
+				<ul id='about'>
+					<li>dsfjkldsflkjsdf</li>
+					<li>dsfjkldsflkjsdf</li>
+					<li>dsfjkldsflkjsdf</li>
+				</ul>
+			</div>
+			<div id="menu_stuff">
+				<ul>
+					<li><a href='#'>Add Job</a></li>
+					<li><a href='#'>Add School</a></li>
+					<li><a href='#'>Remove Job</a></li>
+					<li><a href='#'>Remove School</a></li>					
+
+				</ul>
+				<ul>
+					<li><a href='#'>Save</a></li>
+					<li><a href='#'>Save As</a></li>
+					<li><a href='#'>Get PDF</a></li>
+				</ul>
+				<ul>
+					<li><a href='#'>Log Out</a></li>
+					<li><a href='#'>Account</a></li>
+					<li><a href='#'>My Resumes</a></li>
+				</ul>				
+				<!-- <div>Resumaker</div> -->
+			</div>
+
+			
+
+			<div id='s1'>
+				<div class="slider_title">Layout</div>
+				<div id="s-layout"></div>
+			</div>
+ 			<div id='s2'>
+ 				<div class="slider_title">Background</div>
+ 				<div id="s-texture"></div>
+ 			</div>
+			<div id='s3'>
+				<div class="slider_title">Color</div>
+				<div id="s-color"></div>
+			</div>
+		</div>
+	</div>
+
+<script>
+
+// <p class="canvas" data-effect="vintage">
+// 	<img src="images/1.jpg" />
+// </p>
+// Or 1 line of javascript:
+
+// $("img.custum_class").canvasEffect({    'effect': contrast,    'value' : 1.4});
+// $("#headshot img").mouseover(function() {
+// 	$("#headshot img").canvasEffect({'effect': contrast,'value' : 1.4});
+// 	});
+
+
+// Javascript
+$("#blend img").mouseover(function(){
+// $("#customcanvas img").mouseover(function(){
+	// $("#customcanvas img").canvasEffect({"effect":
+	// 	[{"effect": "blackAndWhite"}, 
+	// 	 {"effect": "contrast", "value": 2}, 
+	// 	 {"effect": "filmgrain"}, 
+	// 	 {"effect": "vignetting", "value": 70}]});
+	// $("#blend img").blend(mode: 'difference', adjustment: 'rgb(114, 25, 219)');
+		// $("#blend img").stop().animate({opacity: 0.0}, 500 );
+		// $("#customcanvas img").stop().css({opacity: 0.0});
+	
+});
+
+// Using multiple unit types within one animation.
+ 
+$( "#menu" ).mouseover(function() {
+  $( "#menu" ).stop().animate({opacity: 1.0}, 500 );
+  $( "#menu_stuff" ).stop().show();
+  $( "#menu").stop().hide();
+  // $( "#menu img").stop().hide();
+  $( "#menu_stuff, #menu_stuff li" ).stop().animate({opacity: 1.0}, 1000 );
+  $( "#menu img" ).stop().animate({opacity: 0.0}, 500 );
+  $(".slider_title").stop().animate({opacity: 0.0}, 100 );
+  $( ".ui-slider-handle").stop().animate({opacity: 0.0}, 50 );
+  $("#overlay").stop().animate({opacity: 0.5,height:'350px'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+  $("#overlay2").stop().animate({opacity: .7,height:'350px'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+});
+
+$( "#col2,#s1,#s2,#s3" ).mouseover(function() { 
+  $( "#menu").stop().show();
+  $( ".ui-slider-handle").stop().animate({opacity: 0.4}, 500 );
+  $( "#menu_stuff, #menu_stuff li" ).stop().animate({opacity: 0.0}, 500 );
+  $( "#menu_stuff" ).stop().hide();
+  $(".slider_title").stop().animate({opacity: 1.0}, 1000 );
+  $( "#menu img" ).stop().animate({opacity: 0.5}, 500 );
+  $("#overlay").stop().animate({opacity: 0.0,height:'0px'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+    $("#overlay2").stop().animate({opacity: 0.0,height:'0px'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+});
+
+$("#overlay2 div").mouseover(function() {
+	$("#overlay2 div").css('color','white');
+});
+
+$("#overlay2 div").mouseleave(function() {
+	$("#overlay2 div").css('color','grey');	
+
+});
+
+$("#overlay2 div").click(function() {
+	  $( "#menu_stuff, #menu_stuff li" ).stop().animate({opacity: 0.0}, 500 );
+  $( "#menu_stuff" ).stop().hide();
+	$("#overlay").stop().animate({opacity: 0.0,height:'0px'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+  $("#overlay2").stop().animate({opacity: .95,height:'100%'}, {queue:false, duration:600, easing: 'easeOutQuint'} );
+$("#overlay2 div").stop().animate({top: '0px'}, {queue:false, duration:6000, easing: 'easeOutQuint'} );
+	$("#about").show();
+
+
+
+	});
+
+  
+
+
+
+</script>
+
+</body>
+
+</HTML>
+
+
+<!-- http://buildinternet.com/2009/01/how-to-make-a-smooth-animated-menu-with-jquery/ -->
