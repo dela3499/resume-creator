@@ -1,1 +1,1 @@
-This is a tool to create resumes in a dynamic way. Take a look at the demo above to see a mockup of the interface. There a short explanation of the project on [my blog](http://carlosd.ghost.io/creating-a-resume/).
+This is a tool to create resumes in a dynamic way. Take a look at the demo above to see a mockup of the interface. There's a short explanation of the project on [my blog](http://carlosd.ghost.io/creating-a-resume/).
